@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WardrobeSwap</title>
+  <link rel="stylesheet" type="text/css" href="/resources/style.css">
+</head>
+<body>
+  <% include partials/header.ejs %>
+  <% include partials/user-navigation.ejs %>
+  <% include partials/site-navigation.ejs %>
+
+  <main>
+    <ul class="breadcrumb">
+      <li><a href="/index">Home </a>&gt;</li>
+      <li><a href="/myItems"> My Items</a></li>
+    </ul>
+    <h2>Clothes & Accessories for Swap</h2>
+    <table>
+      <tr>
+        <th>Item</th>
+        <th>Category</th>
+        <th>My Ratings</th>
+        <th>Swapped</th>
+        <th>    </th>
+        <th>    </th>
+      </tr>
+      <tr>
+        <td><a href="/item/1">GLITZY AND GLITTERY SPECIAL OCCASION DRESS</a></td>
+        <td>Women : Dresses</td>
+        <td>&starf; &starf;</td>
+        <td><img class="swap" alt="swap" src="/resources/image/swap.jpg"></td>
+        <td><a class="button" href="/item" >Update</a></td>
+        <td><a class="button" href="/myItems">Delete</a></td>
+      </tr>
+      <tr>
+        <td><a href="/item/2">Peter Pan Collared Abbey Bouquet Floral Print Blouse</a></td>
+        <td>Women : Tops</td>
+        <td>&starf; &starf; &starf;</td>
+        <td> </td>
+        <td><a class="button" href="/item">Update</a></td>
+        <td><a class="button" href="/myItems">Delete</a></td>
+      </tr>
+      <tr>
+        <td><a href="/item/3">POLO SHIRT</a></td>
+        <td>Men : Shirts</td>
+        <td>&starf; &starf; &starf; &starf;</td>
+        <td> </td>
+        <td><a class="button" href="/item">Update</a></td>
+        <td><a class="button" href="/myItems">Delete</a></td>
+      </tr>
+      <tr>
+        <td><a href="/item/4">ORIGINAL LEVIS JEANS 712 SLIM - SIZE 26 NEW</a></td>
+        <td>Women : Bottoms</td>
+        <td>&starf; &starf; </td>
+        <td><img class="swap" alt="tick" src="/resources/image/tick.png"></td>
+        <td><a class="button" href="/item">Update</a></td>
+        <td><a class="button" href="/myItems">Delete</a></td>
+      </tr>
+    </table>
+    <p id="legend"> Legend : <img class="swap" alt="swap" src="/resources/image/swap.jpg"> swap offer available <img class="swap" alt="tick" src="/resources/image/tick.png"> already swapped </p>
+  </main>
+  <% include partials/footer.ejs %>
+</body>
+</html>

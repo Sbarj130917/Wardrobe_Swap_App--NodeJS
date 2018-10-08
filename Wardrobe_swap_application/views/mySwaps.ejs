@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WardrobeSwap</title>
+  <link rel="stylesheet" type="text/css" href="/resources/style.css">
+</head>
+<body>
+  <% include partials/header.ejs %>
+  <% include partials/user-navigation.ejs %>
+  <% include partials/site-navigation.ejs %>
+
+  <main>
+    <ul class="breadcrumb">
+      <li><a href="/index">Home </a>&gt;</li>
+      <li><a href="/mySwaps"> My Swaps</a></li>
+    </ul>
+    <h2>Clothes & Accessories for Swap</h2>
+    <table>
+      <tr>
+        <th>Item</th>
+        <th>Swap Offer</th>
+        <th>    </th>
+        <th>    </th>
+      </tr>
+      <tr>
+        <td><a href="/item/1">GLITZY AND GLITTERY SPECIAL OCCASION DRESS</a></td>
+        <td><a href="/item/3">POLO SHIRT</a></td>
+        <td><a class="button" href="#" >Accept</a></td>
+        <td><a class="button" href="#">Reject</a></td>
+      </tr>
+      <tr>
+        <td><a href="/item/2">Peter Pan Collared Abbey Bouquet Floral Print Blouse</a></td>
+        <td><a href="/item/4">ORIGINAL LEVIS JEANS 712 SLIM - SIZE 26 NEW</a></td>
+        <td colspan="2"><a class="button" href="#">Withdraw Swap</a></td>
+      </tr>
+    </table>
+  </main>
+  <% include partials/footer.ejs %>
+</body>
+</html>
